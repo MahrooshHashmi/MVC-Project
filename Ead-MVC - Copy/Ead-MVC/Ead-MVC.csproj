@@ -328,6 +328,8 @@
     <Content Include="Content\marcopolo-events.html" />
     <Content Include="Content\Mintography-2.html" />
     <Content Include="Content\mintography.html" />
+    <Content Include="Content\mohsin.jpg" />
+    <Content Include="Content\mudassar.jpg" />
     <Content Include="Content\POST.html" />
     <Content Include="Content\privacy.html" />
     <Content Include="Content\register.html" />
@@ -442,7 +444,9 @@
     <Content Include="Content\uploads\services\image_32.png" />
     <Content Include="Content\uploads\services\image_34.jpg" />
     <Content Include="Content\uploads\services\tmp\phpoPOUIi.html" />
+    <Content Include="Content\taimoor.jpg" />
     <Content Include="Content\video.html" />
+    <Content Include="Content\wcu.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
