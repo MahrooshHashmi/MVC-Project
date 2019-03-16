@@ -2,30 +2,512 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<div class="slide-2">
+    <div id="slider" class="sl-slider-wrapper">
+        <div class="sl-slider">
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                <div class="sl-slide-inner ">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+                    <div class="bg-img bg-img-1" style="background-image: url(/Content/frontend/assets/img/Slider4.jpg);"></div>
+                    <blockquote>
+                        <article>Your Celebrations <span class="hidden-xs">|</span> Our Calibrations</article>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+
+                <div class="sl-slide-inner ">
+
+                    <div class="bg-img bg-img-1" style="background-image: url(/Content/frontend/assets/img/Slider2.jpg);"></div>
+                    <blockquote>
+                        <cite>Seek, Find & Book</cite>
+                        <article>Revolutionizing Celebrations With WingDing</article>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+
+                <div class="sl-slide-inner ">
+
+                    <div class="bg-img bg-img-1" style="background-image: url(/Content/frontend/assets/img/Slider3.jpg);"></div>
+                    <blockquote>
+                        <cite>Your Events Managed</cite>
+                        <article>Your Own Way</article>
+                    </blockquote>
+                </div>
+            </div>
+
+
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+
+                <div class="sl-slide-inner ">
+
+                    <div class="bg-img bg-img-1" style="background-image: url(/Content/frontend/assets/img/Slider.jpg);"></div>
+
+                    <blockquote>
+                        <cite>Locate & Curate From Thousand Vendors</cite>
+                        <article>Anytime, Any place!</article>
+
+                    </blockquote>
+                </div>
+            </div>
+        </div><!-- /sl-slider -->
+
+        <nav id="nav-dots" class="nav-dots">
+            <span class="nav-dot-current"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </div><!-- /slider-wrapper -->
+</div>
+<!--End of slider-->
+<!-- property area -->
+<div class="content-area recent-property" style="background-color: #FCFCFC; padding-bottom: 55px;">
+    <span class="left-flower"></span>
+    <span class="right-flower"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
+                <!-- /.feature title -->
+                <h2><span>What we offer</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
+                        <div class="what-offer bg-pink">
+                            <a href=@Url.Content("/Content/services/venues.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/Venue.jpg") alt="Venue">
+                                </div>
+
+                                <div class="asks-first-info">
+                                    <h2>Venues</h2>
+                                    <p>Finding the venue that is best suited for your event is now few clicks away.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-purple">
+                            <a href=@Url.Content("/Content/services/catering.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/catering.jpg") alt="Catering">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Catering</h2>
+                                    <p>Browse through a wide range of renowned catering vendor for your celebrations.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-green">
+                            <a href=@Url.Content("/Content/services/photography-video.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/photography.jpg") alt="Photography">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Photography and video</h2>
+                                    <p>View portfolio, seek quotations and book the photographer that matches your perception</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-red">
+                            <a href=@Url.Content("/Content/services/florist.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/florist.jpg") alt="Florist">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Florist</h2>
+                                    <p>Choose from traditional to contemporary flower settings and book online</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-pink">
+                            <a href=@Url.Content("/Content/services/bakers.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/bakery.jpg") alt="Bakery">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Bakers</h2>
+                                    <p>Oven fresh bakers to whisk, beat and bake your favorites on demand available in just a few clicks.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-yellow">
+                            <a href=@Url.Content("/Content/services/invitation-cards.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/invitation.jpg") alt="Invitation">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Invitation Cards</h2>
+                                    <p>Choose from many card designers and printers to create exceptional invitations.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-dgrey">
+                            <a href=@Url.Content("/Content/services/event-management.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/event-management.jpg") alt="Event">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Event Management</h2>
+                                    <p>Search, compare and match with an event manager that can best handle your event.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-grey">
+                            <a href=@Url.Content("/Content/services/bridal-furniture.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/furniture.jpg") alt="Furniture">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Bridal furniture</h2>
+                                    <p>Choose the best bridal furniture by viewing work samples from furniture manufacturers.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-purple">
+                            <a href=@Url.Content("/Content/services/accessories-decor.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/decor.jpg") alt="Decoration">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Accessories / Décor</h2>
+                                    <p>Get your hands the best decorators from around the town well within your reach.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-xs-12 col-md-offset-0">
+                        <div class="what-offer bg-blue">
+                            <a href=@Url.Content("/Content/services/beauty-saloons.html")>
+                                <div class="what-we-offer">
+                                    <img src=@Url.Content("/Content/frontend/assets/img/service/Salon.jpg") alt="Salon">
+                                </div>
+                                <div class="asks-first-info">
+                                    <h2>Beauty Salons</h2>
+                                    <p>Get the best beauty treatments of the town and flaunt your style within your budget</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-md-3 ad-banner">
+                <div class="row">
+                    <!--Home Page Add 1 -->
+                    <img id="home_page_add_1" src="#" alt="Vendors">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<!--Welcome area -->
+<div class="how-it-works">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
+                <!-- /.feature title -->
+                <h2><span>How it works</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 Welcome-entry  col-sm-12">
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="welcome_services wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="100">
+                        <div class="row">
+                            <div class="col-xs-6 m-padding">
+                                <div class="welcome-estate">
+                                    <span class="number">1</span>
+                                    <h5 class="step">Step 1</h5>
+                                    <h3 class="pink">Select</h3>
+                                    <p>Select one of the many offered services as per your event requirements (venue, catering, salon </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 m-padding">
+                                <div class="welcome-estate">
+                                    <span class="number">2</span>
+                                    <h5 class="step">Step 2</h5>
+                                    <h3 class="pink">Search</h3>
+                                    <p>Apply filters like date, area of the city, capacity, and event type etc. to narrow down the results.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                &nbsp;
+                            </div>
+                            <div class="col-xs-6 m-padding">
+                                <div class="welcome-estate">
+                                    <span class="number">3</span>
+                                    <h5 class="step">Step 3</h5>
+                                    <h3 class="pink">Browse</h3>
+                                    <p>Browse through the listed vendors and click on the preferred one that catch your eyes.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 m-padding">
+                                <div class="welcome-estate">
+                                    <span class="number">4</span>
+                                    <h5 class="step">Step 4</h5>
+                                    <h3 class="pink">Get connected</h3>
+                                    <p>Drop a message to vendor, get a quote, call or simply make a booking for your </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                &nbsp;
+                            </div>
+                            <div class="col-xs-6 m-padding" style="margin-left: 30%;">
+                                <div class="welcome-estate">
+                                    <span class="number">5</span>
+                                    <h5 class="step">Step 5</h5>
+                                    <h3 class="pink">You’re done</h3>
+                                    <p>Your booking is now done, now visit the vendor to pay the booking fee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="welcome_text wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="100">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
+                                <iframe style="width:100%;height:400px;" src="https://www.youtube.com/embed/4WmsCfoOLCM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--why-book -->
+<div class="why-book" style="background-color: #ffffff; overflow: hidden; padding-bottom: 15px;">
+    <span class="left-flower"></span>
+    <span class="right-flower"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
+                <!-- /.feature title -->
+                <h2><span>Why you should book with WingDing</span></h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
+                        <div class="why-book-container">
+                            <div class="why-book-img">
+                                <img src=@Url.Content("/Content/frontend/assets/img/custum-artwork.png") alt="Artwork">
+                            </div>
+                            <div class="why-book-info">
+                                <h5>Hassle free</h5>
+                                <p>Reach beyond limits. No more waiting & burning in traffic, online browsing anytime, anywhere</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
+                        <div class="why-book-container">
+                            <div class="why-book-img">
+                                <img src=@Url.Content("/Content/frontend/assets/img/Guaranteed-Revisions.png") alt="Guaranteed Revisions">
+                            </div>
+                            <div class="why-book-info">
+                                <h5>Marketplace </h5>
+                                <p>Hundreds of vendors to choose from that suit your event, pick the one that's right for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
+                        <div class="why-book-container">
+                            <div class="why-book-img">
+                                <img src=@Url.Content("/Content/frontend/assets/img/Fast-Turn-Around.png") alt="Fast">
+                            </div>
+                            <div class="why-book-info">
+                                <h5>Instant Quotes </h5>
+                                <p>Get input from the vendor instantly to make informed decisions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
+                        <div class="why-book-container">
+                            <div class="why-book-img">
+                                <img src=@Url.Content("/Content/frontend/assets/img/Script-That-Converts.png") alt="Script">
+                            </div>
+                            <div class="why-book-info">
+                                <h5>Easy Booking</h5>
+                                <p>Search, locate and book with just a few clicks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
+                        <div class="why-book-container">
+                            <div class="why-book-img">
+                                <img src=@Url.Content("/Content/frontend/assets/img/Done-In-Any-Language.png") alt="Language">
+                            </div>
+                            <div class="why-book-info">
+                                <h5>Save Time </h5>
+                                <p>Find everything in one place so you have time to do more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
+                        <div class="why-book-container">
+                            <div class="why-book-img">
+                                <img src=@Url.Content("/Content/frontend/assets/img/Dedicated-Project-Manager.png") alt="Manager">
+                            </div>
+                            <div class="why-book-info">
+                                <h5>Vendor Ratings </h5>
+                                <p>Choose from the best rated vendors so you get the best - every time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ad-banner">
+                <div class="row">
+                    <!--Home Page Add 2 -->
+                    <img id="home_page_add_2" src=@Url.Content("/Content/frontend/assets/img/Side-banner1.jpg") alt="Say No">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--TESTIMONIALS -->
+<div class="testimonial-area recent-property" style="background-color: #f4eff7; padding-bottom: 15px;">
+    <div class="container">
+        <div class="row">
+            <div class="testimonial">
+                <div class="col-md-6 col-sm-12  testimonial-heading">
+                    <h1 class="purple">
+                        People <span class="pink">Trust</span> us. <br>
+                        <span class="pink">Love</span> us. see what <br>
+                        they <span class="pink">Talk</span> about us.
+                    </h1>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div id="testimonial-slider">
+                        <div class="item">
+                            <div class="client-text">
+                                <q class="pink">“</q>
+                                <p>Went online to locate potential venues for my son’s wedding. I was surprised to stumble upon WingDing. All the necessities of a major event, all in one place. I booked the venue, arrangements such as catering, décor etc. through them and was ready to start making payments in no time. Kudos to their management for such a brilliant idea.</p>
+                            </div>
+                            <div class="client-face wow fadeInRight" data-wow-delay=".9s">
+                                <img src=@Url.Content("/Content/frontend/assets/img/client-face1.png") alt="Client">
+                                <h6 class="pink">Khadija Zuberi</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="client-text">
+                                <q class="pink">“</q>
+                                <p>Totally forgot to plan about my daughter’s birthday and it seemed as if I will end up with a big disappointment. Thankfully for WingDing, I was able to search, locate and book all the right things well within time for the birthday party. Everything went perfectly fine. Had it not been for WingDing I may not have had such a great experience.</p>
+                            </div>
+                            <div class="client-face">
+                                <img src=@Url.Content("/Content/frontend/assets/img/client-face2.png") alt="Client">
+                                <h6 class="pink">Saad Abdul Qureshi</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="client-text">
+                                <q class="pink">“</q>
+                                <p>I thought throwing my son a surprise graduation party would be easy, until I started looking for correct vendors to help me out. From locating to booking and matching quotes everything seemed overwhelming, so much so that I almost gave up on the idea. Then my friend suggested WingDing and thank God, I took the advice. I was not only able to find the perfect venue close to our home, but also got all the arrangements in time to give my son the surprise he didn’t expect. The surprised look he had was priceless. Thank you, WingDing, hope many others benefit from you like I did.</p>
+                            </div>
+                            <div class="client-face">
+                                <img src=@Url.Content("/Content/frontend/assets/img/client-face1.png") alt="Client">
+                                <h6 class="pink">Shahid Ali Rajput</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src=@Url.Content("/Content/frontend/assets/js/modernizr-2.6.2.min.js")></script>
+
+
+
+
+<!--Newletter area-->
+<!--<section class="newletter">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 signup-text">
+            <h3>Signup now for latest Updates</h3>
+            <p>We respect your privacy your email won’t be shared...</p>
+        </div>
+        <div class="col-md-4 signup-form">
+            <div class="input-group news-form">
+                <input type="email" class="form-control" placeholder="Enter your email" style="border-radius: 10px;">
+                <span class="input-group-btn">
+                <button class="btn btn-theme" type="submit">Subscribe</button>
+     </span>
+            </div>
+        </div>
+        <div class="col-md-4 social2">
+            <ul>
+                <li><a class="wow fadeInUp animated animated" href="https://twitter.com/kimarotec" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="wow fadeInUp animated animated" href="https://www.facebook.com/kimarotec" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="wow fadeInUp animated animated" href="https://plus.google.com/kimarotec" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;"><i class="fa fa-google-plus"></i></a></li>
+                <li><a class="wow fadeInUp animated animated" href="https://instagram.com/kimarotec" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="wow fadeInUp animated animated" href="https://instagram.com/kimarotec" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>-->
+<!--Newletter area-->
+<section class="newletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 signup-text">
+                <h3>Signup now for latest Updates</h3>
+                <p>We respect your privacy your email won’t be shared...</p>
+            </div>
+            <div class="col-md-4 signup-form">
+
+                <form class="input-group news-form" method="POST" action="https://www.wingding.pk/subscribe/submit">
+                    <input type="hidden" name="_token" value="JCRDJgZXhgjwgEJSwDORI11TkOzaApRIQcHRFoh3">
+                    <input type="email" name="email" id="email" required class="form-control" placeholder="Enter your email" style="border-radius: 10px;">
+                    <span class="input-group-btn">
+                        <button class="btn btn-theme" type="submit">Subscribe</button>
+
+                    </span>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
