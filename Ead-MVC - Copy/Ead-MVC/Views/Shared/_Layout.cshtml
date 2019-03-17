@@ -67,7 +67,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a style="padding: 0px 15px;" class="navbar-brand" href=@Url.Content("/Content/index.html")><img class="head-logo" src=@Url.Content("/Content/frontend/assets/img/WingDing-Logo.gif") alt="Wingding"></a>
+                <a style="padding: 0px 15px;" class="navbar-brand" href=@Url.Action("Index","Home")><img class="head-logo" src=@Url.Content("/Content/frontend/assets/img/WingDing-Logo.gif") alt="Wingding"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,9 +76,9 @@
 
 
 
-                    <button class="navbar-btn nav-button2 wow fadeInRight" onclick="window.location.href=@Url.Action("Login","Home")" data-wow-delay="0.5s">Register as Customer</button>
-                    <button class="navbar-btn nav-button wow fadeInRight" onclick="window.location.href=@Url.Content("/Content/register.html")" data-wow-delay="0.5s">Register as Vendor</button>
-                    <button class="navbar-btn nav-button wow bounceInRight login" onclick="window.location.href=@Url.Content("/Content/login.html")" data-wow-delay="0.4s">Login</button>
+                    <button class="navbar-btn nav-button2 wow fadeInRight" onclick="window.location.href='@Url.Action("RegisterCustomer","Home")'" data-wow-delay="0.5s">Register as Customer</button>
+                    <button class="navbar-btn nav-button wow fadeInRight" onclick="window.location.href='@Url.Action("RegisterVendor","Home")'" data-wow-delay="0.5s">Register as Vendor</button>
+                    <button class="navbar-btn nav-button wow bounceInRight login" onclick="window.location.href='@Url.Action("Login","Home")'" data-wow-delay="0.4s">Login</button>
 
                 </div>
                 <ul class="main-nav nav navbar-nav navbar-right">

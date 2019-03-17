@@ -27,5 +27,13 @@ namespace Ead_MVC.Controllers
         {
             return View();
         }
+        public ActionResult RegisterVendor()
+        {
+            return View();
+        }
+        public ActionResult RegisterCustomer()
+        {
+            return View();
+        }
     }
 }

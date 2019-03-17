@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewBag.Title = "RegisterCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="title">
+    <div class="sign-head">
+        <div class="container">
+            <div class="row">
+                <div class="listing-head">
+                    <h1 class="page-title">Customer Registration Form</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="">
+                <br>
+
+
+                <div class="">
+                    <form class="form-horizontal" method="POST" action="https://www.wingding.pk/customer">
+                        <input type="hidden" name="_token" value="JCRDJgZXhgjwgEJSwDORI11TkOzaApRIQcHRFoh3">
+
+
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">First Name *</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="first_name" value="" required autofocus>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Last Name *</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="last_name" value="" required>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Street Address</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="street_add1" value="">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Mobile Number *</label>
+
+                            <div class="col-md-6">
+                                <input id="cell" type="text" required class="form-control" minlength="11" required maxlength="11" name="cell" value="">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">City *</label>
+
+                            <div class="col-md-6">
+
+
+                                <select name="city" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" title="- Select City -" required><option value="Karachi">Karachi</option><option value="Lahore">Lahore</option><option value="Islamabad">Islamabad</option><option value="Rawalpindi">Rawalpindi</option><option value="Multan">Multan</option><option value="Hyderabad">Hyderabad</option></select>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Nic</label>
+
+                            <div class="col-md-6">
+                                <input id="nic" maxlength="13" minlength="13" type="text" class="form-control input-circle" name="nic">
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Email *</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="text" class="form-control" name="email" value="" required>
+
+                                <span class="help-block emailvalidation" style="color:red;display:none;">
+                                    <strong style="font-weight: bold;">Provide Valid Email Address</strong>
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="col-md-4 control-label">Password *</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+
+                                <span class="help-block passwordvalidation" style="color:red;display:none;">
+                                    <strong style="font-weight: bold;">Password does not match the confirm password.</strong>
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" id="register" class="btn btn-primary">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
