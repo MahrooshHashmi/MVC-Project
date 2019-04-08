@@ -35,5 +35,10 @@ namespace Ead_MVC.Controllers
         {
             return View();
         }
+
+        public ActionResult ForgotPassword()
+        {
+            return View("PasswordReset");
+        }
     }
 }
